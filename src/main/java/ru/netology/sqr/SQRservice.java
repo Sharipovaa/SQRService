@@ -1,12 +1,12 @@
 package ru.netology.sqr;
 
 public class SQRservice {
-    public int calculate(int min, int max) {
-        for (int i = 10; i <= min; min++) {
-            if (i * min >= max ) {
-                return min;
+    public int findSquare(int min, int max) {
+        for (int i = 0; i < min; i++) {
+            if (i * i >= min) {
+                return i;
             }
         }
-        return 0;
+        return max;
     }
 }
