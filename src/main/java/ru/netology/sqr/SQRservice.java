@@ -9,4 +9,14 @@ public class SQRservice {
         }
         return max;
     }
+
+
+    public int findSquareNum(int min, int max) {
+        for (int i = 0; i < min; i++) {
+            if (i * i >= min) {
+                return i;
+            }
+        }
+        return max;
+    }
 }

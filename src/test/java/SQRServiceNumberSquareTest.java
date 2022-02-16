@@ -17,4 +17,16 @@ public class SQRServiceNumberSquareTest {
 
         assertEquals(expected, actual);
     }
+
+
+    @ParameterizedTest
+    @CsvSource(value = {"min, 100, 10",
+            "max, 999, 10"})
+    void shouldFindSquareNum() {
+        SQRservice service = new SQRservice();
+        int expected = 10;
+        int actual = service.findSquareNum(100, 999);
+
+        assertEquals(expected, actual);
+    }
 }
